@@ -1,0 +1,87 @@
+@use "../utils/variables" as *;
+
+html {
+  font-size: 62.5%;
+  font-family: "Outfit", sans-serif;
+}
+
+.main--heading {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  color: $color-white;
+  margin-bottom: 1.6rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.main--heading:hover {
+  color: $color-cyan;
+}
+
+.main--paragraph {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: $color-soft-blue;
+  margin-bottom: 2.4rem;
+}
+
+.eth--paragraph {
+  color: $color-cyan;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-left: 0.64rem;
+}
+
+.time--paragraph {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: $color-soft-blue;
+  margin-left: 0.77rem;
+}
+
+.owner--paragraph {
+  color: $color-soft-blue;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.name {
+  font-weight: 400;
+  color: $color-white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.name:hover {
+  color: $color-cyan;
+}
+
+@media (max-width: 375px) {
+  .main--heading {
+    margin-bottom: 1.2rem;
+  }
+
+  .main--paragraph {
+    margin-bottom: 1.6rem;
+  }
+
+  .eth--paragraph {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+
+  .time--paragraph {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+
+  .owner--paragraph {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+  }
+}
